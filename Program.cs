@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         policyBuilder =>
         {
-            policyBuilder.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500", "https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net")
+            policyBuilder.WithOrigins("https://tomasfranchino.github.io","http://localhost:5500", "http://127.0.0.1:5500", "https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net")
                          .AllowAnyMethod()
                          .AllowAnyHeader();
         });
@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configurar el pipeline de la aplicación HTTP
+// Configurar el pipeline de la aplicaciÃ³n HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
