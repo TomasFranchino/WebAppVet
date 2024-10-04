@@ -1,4 +1,4 @@
-@WebAppVeterinaria_HostAddress = http://localhost:5258
+@WebAppVeterinaria_HostAddress = https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/
 
 GET {{WebAppVeterinaria_HostAddress}}/api/animal/GetAnimales
 Accept: application/json
