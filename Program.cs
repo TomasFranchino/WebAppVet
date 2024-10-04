@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         policyBuilder =>
         {
-            policyBuilder.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")
+            policyBuilder.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500", "https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net")
                          .AllowAnyMethod()
                          .AllowAnyHeader();
         });
